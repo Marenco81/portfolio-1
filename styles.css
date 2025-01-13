@@ -40,6 +40,7 @@ body {
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 .logo:hover {
     transform: scale(1.1);
@@ -56,6 +57,7 @@ body {
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    text-decoration: none;
 }
 .navbar a:hover,
 .navbar a.active {
@@ -75,7 +77,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11rem;
+    gap: 17rem;
 }
 .home-content {
     display: flex;
@@ -92,7 +94,7 @@ span {
     color: var(--main-color);
 }
 .home-content h3 {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 3.5rem;
 }
@@ -108,7 +110,9 @@ span {
 .home-img img {
     position: relative;
     top: 3rem;
-    width: 32vw;
+    width: 27vw;
+    /* height: 71vh; */
+    aspect-ratio: 1;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -116,7 +120,7 @@ span {
 }
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color)
+                0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
 
 }
@@ -175,3 +179,33 @@ span {
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
 }
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    color: black;
+}
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite
+            , typing 20s steps(14) infinite;
+}
+
