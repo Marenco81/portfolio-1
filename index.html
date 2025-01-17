@@ -47,8 +47,9 @@
 
         
         <div class="home-img">
-            <img src="./assets/ProfilePic.jpg" alt="profile pic">
+            <!-- <img src="./assets/ProfilePic.jpg" alt="profile pic"> -->
             <!-- <img src="./assets/Profile-img.jpg" alt="profile pic"> -->
+             <img src="./assets/file.png" alt="profile pic">
         </div>
 
     </section>
@@ -135,8 +136,9 @@
 
             <div class="wrapper" id="wrapper">
                 <div class="project-item">
-                    <img src="./assets/Project1.JPG" alt="project image">
-                    <h2>Project 1</h2>
+                    <!-- <img src="./assets/Project1.JPG" alt="project image"> -->
+                     <video src="./assets/MoviesApp.mp4" autoplay loop></video>
+                    <h2>Movies App</h2>
                     <div class="tech">
                         <i class='bx bxl-html5' id="tech"></i>
                         <i class='bx bxl-css3' id="tech"></i>
@@ -149,13 +151,14 @@
                 </div>
 
                 <div class="project-item">
-                    <img src="./assets/Project2.JPG" alt="project image">
-                    <h2>Project 2</h2>
+                    <!-- <img src="./assets/Project2.JPG" alt="project image"> -->
+                    <video src="./assets/Screen Recording - Jan 17, 2025-VEED.mp4" autoplay loop></video>
+                    <h2>Weather App</h2>
                     <div class="tech">
                         <i class='bx bxl-html5' id="tech"></i>
                         <i class='bx bxl-css3' id="tech"></i>
-                        <i class='bx bxl-javascript' id="tech"></i>
-                        <i class='bx bxl-tailwind-css' id="tech"></i>
+                        <!-- <i class='bx bxl-javascript' id="tech"></i> -->
+                        <!-- <i class='bx bxl-tailwind-css' id="tech"></i> -->
                         <i class='bx bxl-react' id="tech"></i>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fugiat, sint ducimus obcaecati dolorum quas modi commodi incidunt sapiente, provident veniam. Totam nostrum officia molestias pariatur voluptate harum qui, culpa eius quidem in ea neque sint mollitia consequuntur? Maiores excepturi iste tempora hic minus explicabo et, deleniti a? Doloremque, ea.</p>
@@ -184,20 +187,20 @@
 
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="">
+        <form action="https://formsubmit.co/a363166cffba17dd343540c3e4836d61" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="Full Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="tel"  name="Phone Number" placeholder="Phone Number" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
