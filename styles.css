@@ -681,4 +681,7 @@ span {
     .services-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .services-container .service-box{
+        height: 400px;
+    }
 }
